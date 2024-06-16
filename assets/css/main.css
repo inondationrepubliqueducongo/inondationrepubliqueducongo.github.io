@@ -1,0 +1,108 @@
+﻿:root{
+    --bg-color: var(--bs-gray-400);
+    --text-color: #282a2b;
+    --accent-color:#9D9E9E;
+    --contrast-color:#448972;
+}
+html,body{
+    height: 100%;
+}
+
+/******************* General rules ********************/
+body{
+    min-width: 320px;    
+    
+    background-color: #efa650;
+    background-image: url("/assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--bg-color);
+    opacity: .95;
+    
+    width:95%;
+    margin: 0 auto;
+}
+
+/******************* Header rules ********************/
+header{
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+ul.social, ul.link{
+    list-style: none;
+}
+ul.social li{
+    margin: 5px;
+}
+ul.social a{
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    transition: all .3s;
+}
+ul.social a:hover{
+    background-color: var(--contrast-color);
+    color: var(--accent-color);
+}
+#title, #subtitle{
+    margin-bottom: 0px;
+}
+
+/******************* footer rules ********************/
+
+footer h4{
+    color: var(--contrast-color);
+}
+
+#topBtn{
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+    background-color: var(--accent-color);
+    opacity: .5;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 25px;
+    transition: all .5s;
+    display: none;
+}
+
+#topBtn:hover{
+    opacity: 1;
+}
+
+/******************* main rules ********************/
+
+main{
+    flex: 1 1 auto;
+}
+
+#map, iframe{
+    flex: 1 1 auto;
+}
+
+@media(max-height: 800px){
+    #map, iframe{
+        flex: 1 1 90vh;
+    }
+}
