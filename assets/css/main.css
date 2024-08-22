@@ -1,8 +1,9 @@
 ﻿:root{
-    --bg-color: var(--bs-gray-400);
-    --text-color: #282a2b;
-    --accent-color:#9D9E9E;
-    --contrast-color:#448972;
+    --bg-color: Gainsboro;
+    --text-bg-color: white;
+    --text-color: black;
+    --accent-color:Silver;
+    --contrast-color: DodgerBlue;
 }
 html,body{
     height: 100%;
@@ -10,13 +11,8 @@ html,body{
 
 /******************* General rules ********************/
 body{
-    min-width: 320px;    
-    
-    background-color: #efa650;
-    background-image: url("/assets/img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    min-width: 320px;        
+    background-color: var(--bg-color);
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -64,20 +60,27 @@ ul.social a:hover{
 #title, #subtitle{
     margin-bottom: 0px;
 }
+nav, ul.dropdown-menu{
+    background-color: var(--accent-color);
+}
 
+nav a.nav-link.active{
+    font-weight: bold;
+}
 /******************* footer rules ********************/
 
 footer h4{
     color: var(--contrast-color);
 }
 
+/******************* Кнопка вверх ********************/
 #topBtn{
     position: fixed;
     bottom: 2.5%;
     right: 2.5%;
     background-color: var(--accent-color);
     opacity: .5;
-    color: #fff;
+    color: var(--text-bg-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -95,14 +98,15 @@ footer h4{
 
 main{
     flex: 1 1 auto;
+    background-color: var(--text-bg-color);
 }
 
-#map, iframe{
+iframe{
     flex: 1 1 auto;
 }
-
+/*Для узких экранов*/
 @media(max-height: 800px){
-    #map, iframe{
+    iframe{
         flex: 1 1 90vh;
     }
 }
