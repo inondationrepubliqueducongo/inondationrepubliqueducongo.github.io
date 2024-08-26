@@ -19,7 +19,7 @@
         </div>
 
       </div>
-      <p class="text-justify">Les inondations au Congo sont un défi constant pour les communautés locales, provoquant
+      <p class="text-justify fw-bold">Les inondations au Congo sont un défi constant pour les communautés locales, provoquant
         des perturbations majeures et des dommages étendus. Notre portail propose des informations géographiques
         précises et à jour pour suivre ces événements et comprendre leur impact. Grâce à nos outils, vous pouvez accéder
         à des cartes détaillées et des données cruciales pour mieux anticiper les crises. Nous visons à aider les

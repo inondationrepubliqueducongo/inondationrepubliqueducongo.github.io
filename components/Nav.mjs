@@ -23,7 +23,7 @@
               <RouterLink class="nav-link dropdown-toggle" activeClass='active'
                           :to="{name:'MapFlood'}" role="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
-                Cartes
+                Atlas
               </RouterLink>
               <ul class="dropdown-menu" onclick="this.classList.remove('show')">
                 <li>

@@ -14,8 +14,7 @@ html, body {
 body {
     min-width: 320px;
     background-color: var(--bg-color);
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Calibri", sans-serif;
     font-style: normal;
     color: var(--text-color);
 }
@@ -34,7 +33,7 @@ body {
 
 /******************* Header rules ********************/
 header {
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: Calibri, sans-serif;
 }
 
 ul.social, ul.link {
