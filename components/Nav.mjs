@@ -17,8 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto m-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" exactActiveClass='active' to="/">Inondations</RouterLink>
+              <RouterLink class="nav-link" exactActiveClass='active' to="/">Accueil</RouterLink>
             </li>
+
             <li class="nav-item dropdown">
               <RouterLink class="nav-link dropdown-toggle" activeClass='active'
                           :to="{name:'MapFlood'}" role="button" data-bs-toggle="dropdown"
@@ -37,6 +38,10 @@
                   </RouterLink>
                 </li>
               </ul>
+            </li>
+
+            <li class="nav-item">
+              <RouterLink class="nav-link" activeClass='active' :to="{name:'Maps'}">Cartes</RouterLink>
             </li>
           </ul>
         </div>
