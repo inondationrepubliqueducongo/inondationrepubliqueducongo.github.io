@@ -1,17 +1,18 @@
-﻿:root{
+﻿:root {
     --bg-color: Gainsboro;
     --text-bg-color: white;
     --text-color: black;
-    --accent-color:Silver;
+    --accent-color: Silver;
     --contrast-color: DodgerBlue;
 }
-html,body{
+
+html, body {
     height: 100%;
 }
 
 /******************* General rules ********************/
-body{
-    min-width: 320px;        
+body {
+    min-width: 320px;
     background-color: var(--bg-color);
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -19,30 +20,32 @@ body{
     color: var(--text-color);
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    
+
     background-color: var(--bg-color);
     opacity: .95;
-    
-    width:95%;
+
+    width: 95%;
     margin: 0 auto;
 }
 
 /******************* Header rules ********************/
-header{
+header {
     font-family: "PT Sans Caption", sans-serif;
 }
 
-ul.social, ul.link{
+ul.social, ul.link {
     list-style: none;
 }
-ul.social li{
+
+ul.social li {
     margin: 5px;
 }
-ul.social a{
+
+ul.social a {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     width: 30px;
@@ -53,28 +56,32 @@ ul.social a{
     text-align: center;
     transition: all .3s;
 }
-ul.social a:hover{
+
+ul.social a:hover {
     background-color: var(--contrast-color);
     color: var(--accent-color);
 }
-#title, #subtitle{
+
+#title, #subtitle {
     margin-bottom: 0px;
 }
-nav, ul.dropdown-menu{
+
+nav, ul.dropdown-menu {
     background-color: var(--accent-color);
 }
 
-nav a.nav-link.active{
+nav a.nav-link.active {
     font-weight: bold;
 }
+
 /******************* footer rules ********************/
 
-footer h4{
+footer h4 {
     color: var(--contrast-color);
 }
 
 /******************* Кнопка вверх ********************/
-#topBtn{
+#topBtn {
     position: fixed;
     bottom: 2.5%;
     right: 2.5%;
@@ -87,26 +94,26 @@ footer h4{
     border: 0;
     font-size: 25px;
     transition: all .5s;
-    display: none;
 }
 
-#topBtn:hover{
+#topBtn:hover {
     opacity: 1;
 }
 
 /******************* main rules ********************/
 
-main{
+main {
     flex: 1 1 auto;
     background-color: var(--text-bg-color);
 }
 
-iframe{
+iframe {
     flex: 1 1 auto;
 }
+
 /*Для узких экранов*/
-@media(max-height: 800px){
-    iframe{
+@media (max-height: 800px) {
+    iframe {
         flex: 1 1 90vh;
     }
 }
